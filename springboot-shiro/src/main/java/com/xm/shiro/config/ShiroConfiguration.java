@@ -20,7 +20,6 @@ import java.util.Map;
 
 /**
  * shiro配置类
- * Created by cdyoue on 2016/10/21.
  */
 @Configuration
 public class ShiroConfiguration {

@@ -35,19 +35,19 @@ public class Application {
 	
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(Application.class);
-//		app.addListeners(new ApplicationListener<ApplicationPreparedEvent>() {
-//
-//			@Override
-//			public void onApplicationEvent(ApplicationPreparedEvent arg0) {
-//				// TODO Auto-generated method stub
-//
-//			}
-//
-//		});
-//		app.addListeners(new ApplicationPidFileWriter()); // write pid to application.pid
-//		app.run(args);
+		app.addListeners(new ApplicationListener<ApplicationPreparedEvent>() {
+
+			@Override
+			public void onApplicationEvent(ApplicationPreparedEvent arg0) {
+				// TODO Auto-generated method stub
+
+			}
+
+		});
+		app.addListeners(new ApplicationPidFileWriter()); // write pid to application.pid
+		app.run(args);
 		
-		SpringApplication.run(Application.class, args);
+//		SpringApplication.run(Application.class, args);
 	}
 	
 
