@@ -1,9 +1,11 @@
 package com.xm.shiro.admin.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.io.Serializable;
 import java.util.List;
 
-public class User   {
+public class User implements Serializable  {
 	private Integer id;
 	private String cnname;
 	private String username;

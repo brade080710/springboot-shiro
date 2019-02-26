@@ -4066,3 +4066,1007 @@ Caused by: java.lang.NullPointerException: null
 2019-02-25 17:42:06.052  INFO 14224 --- [http-nio-8080-exec-5] com.xm.shiro.config.ShiroRealm           : doGetAuthenticationInfo +org.apache.shiro.authc.UsernamePasswordToken - hlhdidi, rememberMe=false
 2019-02-25 17:42:06.052  INFO 14224 --- [http-nio-8080-exec-5] com.xm.shiro.config.ShiroRealm           : hlhdidi[C@790b61f
 2019-02-25 17:42:06.607  INFO 14224 --- [http-nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-26 11:30:25.879  INFO 8188 --- [main] com.Application                          : Starting Application on DESKTOP-94NL1GQ with PID 8188 (C:\Users\pengb\git\springboot-shiro\springboot-shiro\target\classes started by gaoxinda in C:\Users\pengb\git\springboot-shiro\springboot-shiro)
+2019-02-26 11:30:25.897  INFO 8188 --- [main] com.Application                          : The following profiles are active: dev
+2019-02-26 11:30:25.964  INFO 8188 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Tue Feb 26 11:30:25 CST 2019]; root of context hierarchy
+2019-02-26 11:30:28.938  INFO 8188 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-26 11:30:30.495  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class com.xm.shiro.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$ccb991e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.099  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.115  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b477f0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.123  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfig' of type [class com.xm.shiro.config.DruidConfig$$EnhancerBySpringCGLIB$$b043ff81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.507 ERROR 8188 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2019-02-26 11:30:31.579  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'default_databaseSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.875  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.890  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.892  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.896  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.899  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.903  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.904  INFO 8188 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2019-02-26 11:30:31.904  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [class com.xm.shiro.config.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.920  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.947  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.968  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:31.999  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.xm.shiro.config.RedisConfig$$EnhancerBySpringCGLIB$$a66c235a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:32.010  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d8732ddb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:32.028  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:32.105  INFO 8188 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$218563f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:30:32.792  INFO 8188 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-26 11:30:32.835  INFO 8188 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-02-26 11:30:32.836  INFO 8188 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-02-26 11:30:32.961  INFO 8188 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-26 11:30:32.962  INFO 8188 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7003 ms
+2019-02-26 11:30:32.970  INFO 8188 --- [localhost-startStop-1] com.xm.shiro.config.DruidConfig          : init Druid Servlet Configuration 
+2019-02-26 11:30:33.360  INFO 8188 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-02-26 11:30:33.362  INFO 8188 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-26 11:30:33.365  INFO 8188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-26 11:30:33.366  INFO 8188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-26 11:30:33.366  INFO 8188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-26 11:30:33.367  INFO 8188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-26 11:30:33.367  INFO 8188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-26 11:30:33.367  INFO 8188 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2019-02-26 11:30:34.379  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Tue Feb 26 11:30:25 CST 2019]; root of context hierarchy
+2019-02-26 11:30:34.516  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.index()
+2019-02-26 11:30:34.517  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.login(java.lang.String,java.lang.String,boolean)
+2019-02-26 11:30:34.518  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logOut]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.logOut(javax.servlet.http.HttpSession)
+2019-02-26 11:30:34.520  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.update(com.xm.shiro.admin.entity.User)
+2019-02-26 11:30:34.520  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public int com.xm.shiro.admin.controller.UserController.delete(java.lang.Integer)
+2019-02-26 11:30:34.521  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.create(com.xm.shiro.admin.entity.User)
+2019-02-26 11:30:34.521  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.xm.shiro.admin.entity.User> com.xm.shiro.admin.controller.UserController.list(javax.servlet.http.HttpServletRequest)
+2019-02-26 11:30:34.522  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.detail(java.lang.Integer)
+2019-02-26 11:30:34.524  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-26 11:30:34.525  INFO 8188 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-26 11:30:34.654  INFO 8188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:30:34.654  INFO 8188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:30:34.788  INFO 8188 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:30:35.823  INFO 8188 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-26 11:30:35.824  INFO 8188 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'default_databaseSource' has been autodetected for JMX exposure
+2019-02-26 11:30:35.832  INFO 8188 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'default_databaseSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=default_databaseSource,type=DruidDataSource]
+2019-02-26 11:30:35.953  INFO 8188 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-26 11:30:35.960  INFO 8188 --- [main] com.Application                          : Started Application in 10.65 seconds (JVM running for 11.544)
+2019-02-26 11:30:44.122  INFO 8188 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-26 11:30:44.122  INFO 8188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-26 11:30:44.174  INFO 8188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 52 ms
+2019-02-26 11:30:44.227  INFO 8188 --- [http-nio-8080-exec-1] c.x.s.admin.controller.LoginController   : ==========hlhdidi123false
+2019-02-26 11:31:01.742  INFO 8188 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : doGetAuthenticationInfo +org.apache.shiro.authc.UsernamePasswordToken - hlhdidi, rememberMe=false
+2019-02-26 11:31:01.748  INFO 8188 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : hlhdidi[C@7e0480f6
+2019-02-26 11:31:10.242  INFO 8188 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-26 11:31:17.954 ERROR 8188 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to com.xm.shiro.admin.entity.User] with root cause
+
+java.lang.ClassCastException: java.lang.String cannot be cast to com.xm.shiro.admin.entity.User
+	at com.xm.shiro.admin.controller.LoginController.login(LoginController.java:50) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.5.jar:1.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2019-02-26 11:32:16.477  INFO 14136 --- [main] com.Application                          : Starting Application on DESKTOP-94NL1GQ with PID 14136 (C:\Users\pengb\git\springboot-shiro\springboot-shiro\target\classes started by gaoxinda in C:\Users\pengb\git\springboot-shiro\springboot-shiro)
+2019-02-26 11:32:16.483  INFO 14136 --- [main] com.Application                          : The following profiles are active: dev
+2019-02-26 11:32:16.547  INFO 14136 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Tue Feb 26 11:32:16 CST 2019]; root of context hierarchy
+2019-02-26 11:32:19.393  INFO 14136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-26 11:32:21.411  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class com.xm.shiro.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$cbcdc694] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.143  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.159  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$a5bb3b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.167  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfig' of type [class com.xm.shiro.config.DruidConfig$$EnhancerBySpringCGLIB$$af58342d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.499 ERROR 14136 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2019-02-26 11:32:22.542  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'default_databaseSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.762  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.777  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.779  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.783  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.785  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.788  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.789  INFO 14136 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2019-02-26 11:32:22.789  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [class com.xm.shiro.config.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.803  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.823  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.841  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.865  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.xm.shiro.config.RedisConfig$$EnhancerBySpringCGLIB$$a5805806] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.874  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7876287] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.893  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:22.959  INFO 14136 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$209998a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:32:23.482  INFO 14136 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-26 11:32:23.495  INFO 14136 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-02-26 11:32:23.496  INFO 14136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-02-26 11:32:23.637  INFO 14136 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-26 11:32:23.638  INFO 14136 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7093 ms
+2019-02-26 11:32:23.646  INFO 14136 --- [localhost-startStop-1] com.xm.shiro.config.DruidConfig          : init Druid Servlet Configuration 
+2019-02-26 11:32:24.063  INFO 14136 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-02-26 11:32:24.064  INFO 14136 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-26 11:32:24.068  INFO 14136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-26 11:32:24.069  INFO 14136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-26 11:32:24.069  INFO 14136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-26 11:32:24.070  INFO 14136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-26 11:32:24.072  INFO 14136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-26 11:32:24.072  INFO 14136 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2019-02-26 11:32:25.061  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Tue Feb 26 11:32:16 CST 2019]; root of context hierarchy
+2019-02-26 11:32:25.198  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.index()
+2019-02-26 11:32:25.200  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.login(java.lang.String,java.lang.String,boolean)
+2019-02-26 11:32:25.200  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logOut]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.logOut(javax.servlet.http.HttpSession)
+2019-02-26 11:32:25.202  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.update(com.xm.shiro.admin.entity.User)
+2019-02-26 11:32:25.203  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public int com.xm.shiro.admin.controller.UserController.delete(java.lang.Integer)
+2019-02-26 11:32:25.203  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.create(com.xm.shiro.admin.entity.User)
+2019-02-26 11:32:25.204  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.xm.shiro.admin.entity.User> com.xm.shiro.admin.controller.UserController.list(javax.servlet.http.HttpServletRequest)
+2019-02-26 11:32:25.204  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.detail(java.lang.Integer)
+2019-02-26 11:32:25.205  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-26 11:32:25.206  INFO 14136 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-26 11:32:25.337  INFO 14136 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:32:25.338  INFO 14136 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:32:25.479  INFO 14136 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:32:26.394  INFO 14136 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-26 11:32:26.395  INFO 14136 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'default_databaseSource' has been autodetected for JMX exposure
+2019-02-26 11:32:26.400  INFO 14136 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'default_databaseSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=default_databaseSource,type=DruidDataSource]
+2019-02-26 11:32:26.462  INFO 14136 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-26 11:32:26.467  INFO 14136 --- [main] com.Application                          : Started Application in 10.499 seconds (JVM running for 11.216)
+2019-02-26 11:32:30.464  INFO 14136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-26 11:32:30.465  INFO 14136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-26 11:32:30.492  INFO 14136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2019-02-26 11:32:30.536  INFO 14136 --- [http-nio-8080-exec-1] c.x.s.admin.controller.LoginController   : ==========hlhdidi123false
+2019-02-26 11:32:41.027  INFO 14136 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : doGetAuthenticationInfo +org.apache.shiro.authc.UsernamePasswordToken - hlhdidi, rememberMe=false
+2019-02-26 11:32:41.032  INFO 14136 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : hlhdidi[C@109db2d
+2019-02-26 11:32:49.345  INFO 14136 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-26 11:32:54.466 ERROR 14136 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: org.apache.shiro.web.subject.support.WebDelegatingSubject cannot be cast to com.xm.shiro.admin.entity.User] with root cause
+
+java.lang.ClassCastException: org.apache.shiro.web.subject.support.WebDelegatingSubject cannot be cast to com.xm.shiro.admin.entity.User
+	at com.xm.shiro.admin.controller.LoginController.login(LoginController.java:50) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.5.jar:1.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2019-02-26 11:34:19.962  INFO 7448 --- [main] com.Application                          : Starting Application on DESKTOP-94NL1GQ with PID 7448 (C:\Users\pengb\git\springboot-shiro\springboot-shiro\target\classes started by gaoxinda in C:\Users\pengb\git\springboot-shiro\springboot-shiro)
+2019-02-26 11:34:19.977  INFO 7448 --- [main] com.Application                          : The following profiles are active: dev
+2019-02-26 11:34:20.083  INFO 7448 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Tue Feb 26 11:34:20 CST 2019]; root of context hierarchy
+2019-02-26 11:34:22.722  INFO 7448 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-26 11:34:24.532  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class com.xm.shiro.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$93c2a287] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:25.282  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:25.295  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$d2508faa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:25.305  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfig' of type [class com.xm.shiro.config.DruidConfig$$EnhancerBySpringCGLIB$$774d1020] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:25.735 ERROR 7448 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2019-02-26 11:34:25.780  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'default_databaseSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:25.990  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.003  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.005  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.008  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.010  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.013  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.014  INFO 7448 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2019-02-26 11:34:26.014  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [class com.xm.shiro.config.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.028  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.045  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.061  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.088  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.xm.shiro.config.RedisConfig$$EnhancerBySpringCGLIB$$6d7533f9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.096  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f7c3e7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.122  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.190  INFO 7448 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$e88e7498] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:34:26.753  INFO 7448 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-26 11:34:26.767  INFO 7448 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-02-26 11:34:26.768  INFO 7448 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-02-26 11:34:26.875  INFO 7448 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-26 11:34:26.876  INFO 7448 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6795 ms
+2019-02-26 11:34:26.883  INFO 7448 --- [localhost-startStop-1] com.xm.shiro.config.DruidConfig          : init Druid Servlet Configuration 
+2019-02-26 11:34:27.251  INFO 7448 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-02-26 11:34:27.253  INFO 7448 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-26 11:34:27.258  INFO 7448 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-26 11:34:27.259  INFO 7448 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-26 11:34:27.259  INFO 7448 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-26 11:34:27.260  INFO 7448 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-26 11:34:27.260  INFO 7448 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-26 11:34:27.260  INFO 7448 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2019-02-26 11:34:28.221  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Tue Feb 26 11:34:20 CST 2019]; root of context hierarchy
+2019-02-26 11:34:28.363  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.index()
+2019-02-26 11:34:28.370  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.login(java.lang.String,java.lang.String,boolean)
+2019-02-26 11:34:28.371  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logOut]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.logOut(javax.servlet.http.HttpSession)
+2019-02-26 11:34:28.373  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.update(com.xm.shiro.admin.entity.User)
+2019-02-26 11:34:28.374  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public int com.xm.shiro.admin.controller.UserController.delete(java.lang.Integer)
+2019-02-26 11:34:28.374  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.create(com.xm.shiro.admin.entity.User)
+2019-02-26 11:34:28.374  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.xm.shiro.admin.entity.User> com.xm.shiro.admin.controller.UserController.list(javax.servlet.http.HttpServletRequest)
+2019-02-26 11:34:28.375  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.detail(java.lang.Integer)
+2019-02-26 11:34:28.379  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-26 11:34:28.380  INFO 7448 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-26 11:34:28.543  INFO 7448 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:34:28.543  INFO 7448 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:34:28.686  INFO 7448 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:34:29.548  INFO 7448 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-26 11:34:29.550  INFO 7448 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'default_databaseSource' has been autodetected for JMX exposure
+2019-02-26 11:34:29.555  INFO 7448 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'default_databaseSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=default_databaseSource,type=DruidDataSource]
+2019-02-26 11:34:29.616  INFO 7448 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-26 11:34:29.621  INFO 7448 --- [main] com.Application                          : Started Application in 10.168 seconds (JVM running for 10.906)
+2019-02-26 11:34:33.386  INFO 7448 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-26 11:34:33.387  INFO 7448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-26 11:34:33.420  INFO 7448 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2019-02-26 11:34:33.470  INFO 7448 --- [http-nio-8080-exec-1] c.x.s.admin.controller.LoginController   : ==========hlhdidi123false
+2019-02-26 11:34:42.164  INFO 7448 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : doGetAuthenticationInfo +org.apache.shiro.authc.UsernamePasswordToken - hlhdidi, rememberMe=false
+2019-02-26 11:34:42.169  INFO 7448 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : hlhdidi[C@4e63032a
+2019-02-26 11:34:50.482  INFO 7448 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-26 11:34:57.393 ERROR 7448 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to com.xm.shiro.admin.entity.User] with root cause
+
+java.lang.ClassCastException: java.lang.String cannot be cast to com.xm.shiro.admin.entity.User
+	at com.xm.shiro.admin.controller.LoginController.login(LoginController.java:50) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.5.jar:1.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2019-02-26 11:42:45.393  INFO 14172 --- [main] com.Application                          : Starting Application on DESKTOP-94NL1GQ with PID 14172 (C:\Users\pengb\git\springboot-shiro\springboot-shiro\target\classes started by gaoxinda in C:\Users\pengb\git\springboot-shiro\springboot-shiro)
+2019-02-26 11:42:45.400  INFO 14172 --- [main] com.Application                          : The following profiles are active: dev
+2019-02-26 11:42:45.477  INFO 14172 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Tue Feb 26 11:42:45 CST 2019]; root of context hierarchy
+2019-02-26 11:42:48.480  INFO 14172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-26 11:42:50.005  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class com.xm.shiro.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$a694190b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:50.635  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:50.649  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$e522062e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:50.658  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfig' of type [class com.xm.shiro.config.DruidConfig$$EnhancerBySpringCGLIB$$8a1e86a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.108 ERROR 14172 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2019-02-26 11:42:51.151  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'default_databaseSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.366  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.379  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.380  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.384  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.386  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.390  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.390  INFO 14172 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2019-02-26 11:42:51.390  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [class com.xm.shiro.config.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.404  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.423  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.438  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.464  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.xm.shiro.config.RedisConfig$$EnhancerBySpringCGLIB$$8046aa7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.481  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b24db4fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.500  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:51.569  INFO 14172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$fb5feb1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:42:52.065  INFO 14172 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-26 11:42:52.082  INFO 14172 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-02-26 11:42:52.083  INFO 14172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-02-26 11:42:52.206  INFO 14172 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-26 11:42:52.206  INFO 14172 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6733 ms
+2019-02-26 11:42:52.214  INFO 14172 --- [localhost-startStop-1] com.xm.shiro.config.DruidConfig          : init Druid Servlet Configuration 
+2019-02-26 11:42:52.604  INFO 14172 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-02-26 11:42:52.606  INFO 14172 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-26 11:42:52.611  INFO 14172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-26 11:42:52.611  INFO 14172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-26 11:42:52.612  INFO 14172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-26 11:42:52.612  INFO 14172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-26 11:42:52.614  INFO 14172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-26 11:42:52.614  INFO 14172 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2019-02-26 11:42:53.558  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Tue Feb 26 11:42:45 CST 2019]; root of context hierarchy
+2019-02-26 11:42:53.696  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.index()
+2019-02-26 11:42:53.698  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.login(java.lang.String,java.lang.String,boolean)
+2019-02-26 11:42:53.698  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logOut]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.logOut(javax.servlet.http.HttpSession)
+2019-02-26 11:42:53.700  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.update(com.xm.shiro.admin.entity.User)
+2019-02-26 11:42:53.701  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public int com.xm.shiro.admin.controller.UserController.delete(java.lang.Integer)
+2019-02-26 11:42:53.701  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.create(com.xm.shiro.admin.entity.User)
+2019-02-26 11:42:53.701  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.xm.shiro.admin.entity.User> com.xm.shiro.admin.controller.UserController.list(javax.servlet.http.HttpServletRequest)
+2019-02-26 11:42:53.702  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.detail(java.lang.Integer)
+2019-02-26 11:42:53.704  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-26 11:42:53.704  INFO 14172 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-26 11:42:53.848  INFO 14172 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:42:53.848  INFO 14172 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:42:53.990  INFO 14172 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:42:54.941  INFO 14172 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-26 11:42:54.942  INFO 14172 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'default_databaseSource' has been autodetected for JMX exposure
+2019-02-26 11:42:54.947  INFO 14172 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'default_databaseSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=default_databaseSource,type=DruidDataSource]
+2019-02-26 11:42:55.014  INFO 14172 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-26 11:42:55.028  INFO 14172 --- [main] com.Application                          : Started Application in 10.184 seconds (JVM running for 10.876)
+2019-02-26 11:43:00.875  INFO 14172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-26 11:43:00.875  INFO 14172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-26 11:43:00.905  INFO 14172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-02-26 11:43:00.952  INFO 14172 --- [http-nio-8080-exec-1] c.x.s.admin.controller.LoginController   : ==========hlhdidi123false
+2019-02-26 11:43:09.773  INFO 14172 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : doGetAuthenticationInfo +org.apache.shiro.authc.UsernamePasswordToken - hlhdidi, rememberMe=false
+2019-02-26 11:43:09.778  INFO 14172 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : hlhdidi[C@3a44c2ae
+2019-02-26 11:43:18.126  INFO 14172 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-26 11:43:22.942 ERROR 14172 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: java.lang.String cannot be cast to com.xm.shiro.admin.entity.User] with root cause
+
+java.lang.ClassCastException: java.lang.String cannot be cast to com.xm.shiro.admin.entity.User
+	at com.xm.shiro.admin.controller.LoginController.login(LoginController.java:52) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.5.jar:1.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2019-02-26 11:50:22.242  INFO 2204 --- [main] com.Application                          : Starting Application on DESKTOP-94NL1GQ with PID 2204 (C:\Users\pengb\git\springboot-shiro\springboot-shiro\target\classes started by gaoxinda in C:\Users\pengb\git\springboot-shiro\springboot-shiro)
+2019-02-26 11:50:22.275  INFO 2204 --- [main] com.Application                          : The following profiles are active: dev
+2019-02-26 11:50:22.337  INFO 2204 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Tue Feb 26 11:50:22 CST 2019]; root of context hierarchy
+2019-02-26 11:50:25.016  INFO 2204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-26 11:50:26.534  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class com.xm.shiro.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$73172b35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.208  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.222  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$b1a51858] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.229  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfig' of type [class com.xm.shiro.config.DruidConfig$$EnhancerBySpringCGLIB$$56a198ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.550 ERROR 2204 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2019-02-26 11:50:27.596  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'default_databaseSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.825  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.849  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.858  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.862  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.866  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.870  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.871  INFO 2204 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2019-02-26 11:50:27.871  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [class com.xm.shiro.config.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.909  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.940  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.962  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.989  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.xm.shiro.config.RedisConfig$$EnhancerBySpringCGLIB$$4cc9bca7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:27.998  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7ed0c728] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:28.020  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:28.090  INFO 2204 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$c7e2fd46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 11:50:28.596  INFO 2204 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-26 11:50:28.610  INFO 2204 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-02-26 11:50:28.611  INFO 2204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-02-26 11:50:28.730  INFO 2204 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-26 11:50:28.730  INFO 2204 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6396 ms
+2019-02-26 11:50:28.739  INFO 2204 --- [localhost-startStop-1] com.xm.shiro.config.DruidConfig          : init Druid Servlet Configuration 
+2019-02-26 11:50:29.110  INFO 2204 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-02-26 11:50:29.112  INFO 2204 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-26 11:50:29.115  INFO 2204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-26 11:50:29.118  INFO 2204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-26 11:50:29.118  INFO 2204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-26 11:50:29.118  INFO 2204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-26 11:50:29.119  INFO 2204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-26 11:50:29.119  INFO 2204 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2019-02-26 11:50:30.143  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5505ae1a: startup date [Tue Feb 26 11:50:22 CST 2019]; root of context hierarchy
+2019-02-26 11:50:30.283  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.index()
+2019-02-26 11:50:30.285  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.login(java.lang.String,java.lang.String,boolean)
+2019-02-26 11:50:30.285  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logOut]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.logOut(javax.servlet.http.HttpSession)
+2019-02-26 11:50:30.288  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.update(com.xm.shiro.admin.entity.User)
+2019-02-26 11:50:30.289  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public int com.xm.shiro.admin.controller.UserController.delete(java.lang.Integer)
+2019-02-26 11:50:30.289  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.create(com.xm.shiro.admin.entity.User)
+2019-02-26 11:50:30.289  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.xm.shiro.admin.entity.User> com.xm.shiro.admin.controller.UserController.list(javax.servlet.http.HttpServletRequest)
+2019-02-26 11:50:30.290  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.detail(java.lang.Integer)
+2019-02-26 11:50:30.292  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-26 11:50:30.292  INFO 2204 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-26 11:50:30.434  INFO 2204 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:50:30.434  INFO 2204 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:50:30.575  INFO 2204 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 11:50:31.519  INFO 2204 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-26 11:50:31.520  INFO 2204 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'default_databaseSource' has been autodetected for JMX exposure
+2019-02-26 11:50:31.526  INFO 2204 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'default_databaseSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=default_databaseSource,type=DruidDataSource]
+2019-02-26 11:50:31.589  INFO 2204 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-26 11:50:31.597  INFO 2204 --- [main] com.Application                          : Started Application in 9.909 seconds (JVM running for 10.756)
+2019-02-26 11:52:40.603  INFO 2204 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-26 11:52:40.604  INFO 2204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-26 11:52:40.642  INFO 2204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2019-02-26 11:52:40.710  INFO 2204 --- [http-nio-8080-exec-1] c.x.s.admin.controller.LoginController   : ==========hlhdidi123false
+2019-02-26 11:52:50.282  INFO 2204 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : doGetAuthenticationInfo +org.apache.shiro.authc.UsernamePasswordToken - hlhdidi, rememberMe=false
+2019-02-26 11:52:50.288  INFO 2204 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : hlhdidi[C@1636f1e9
+2019-02-26 11:52:58.657  INFO 2204 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-26 11:53:17.664  INFO 2204 --- [http-nio-8080-exec-2] c.x.s.admin.controller.LoginController   : ==========hlhdidi123false
+2019-02-26 16:07:28.170  INFO 3420 --- [main] com.Application                          : Starting Application on DESKTOP-94NL1GQ with PID 3420 (C:\Users\pengb\git\springboot-shiro\springboot-shiro\target\classes started by gaoxinda in C:\Users\pengb\git\springboot-shiro\springboot-shiro)
+2019-02-26 16:07:28.173  INFO 3420 --- [main] com.Application                          : The following profiles are active: dev
+2019-02-26 16:07:28.219  INFO 3420 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Tue Feb 26 16:07:28 CST 2019]; root of context hierarchy
+2019-02-26 16:07:30.871  INFO 3420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-26 16:07:32.252  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class com.xm.shiro.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$c09d241e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:32.775  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:32.784  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$ff2b1141] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:32.789  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfig' of type [class com.xm.shiro.config.DruidConfig$$EnhancerBySpringCGLIB$$a42791b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.120 ERROR 3420 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2019-02-26 16:07:33.148  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'default_databaseSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.327  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.339  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.341  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.345  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.348  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.349  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.350  INFO 3420 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2019-02-26 16:07:33.350  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [class com.xm.shiro.config.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.359  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.369  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.377  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.393  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.xm.shiro.config.RedisConfig$$EnhancerBySpringCGLIB$$9a4fb590] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.400  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc56c011] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.412  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.457  INFO 3420 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$1568f62f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:07:33.915  INFO 3420 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-26 16:07:33.925  INFO 3420 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-02-26 16:07:33.926  INFO 3420 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-02-26 16:07:34.033  INFO 3420 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-26 16:07:34.034  INFO 3420 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5818 ms
+2019-02-26 16:07:34.044  INFO 3420 --- [localhost-startStop-1] com.xm.shiro.config.DruidConfig          : init Druid Servlet Configuration 
+2019-02-26 16:07:34.354  INFO 3420 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-02-26 16:07:34.356  INFO 3420 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-26 16:07:34.360  INFO 3420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-26 16:07:34.361  INFO 3420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-26 16:07:34.361  INFO 3420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-26 16:07:34.362  INFO 3420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-26 16:07:34.364  INFO 3420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-26 16:07:34.364  INFO 3420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2019-02-26 16:07:34.806  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Tue Feb 26 16:07:28 CST 2019]; root of context hierarchy
+2019-02-26 16:07:34.882  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.index()
+2019-02-26 16:07:34.884  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public void com.xm.shiro.admin.controller.LoginController.login(java.lang.String,java.lang.String,boolean,javax.servlet.http.HttpServletResponse)
+2019-02-26 16:07:34.884  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logOut]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.logOut(javax.servlet.http.HttpSession)
+2019-02-26 16:07:34.887  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.update(com.xm.shiro.admin.entity.User)
+2019-02-26 16:07:34.887  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public int com.xm.shiro.admin.controller.UserController.delete(java.lang.Integer)
+2019-02-26 16:07:34.887  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.create(com.xm.shiro.admin.entity.User)
+2019-02-26 16:07:34.888  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.xm.shiro.admin.entity.User> com.xm.shiro.admin.controller.UserController.list(javax.servlet.http.HttpServletRequest)
+2019-02-26 16:07:34.888  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.detail(java.lang.Integer)
+2019-02-26 16:07:34.890  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-26 16:07:34.891  INFO 3420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-26 16:07:34.927  INFO 3420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:07:34.928  INFO 3420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:07:34.982  INFO 3420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:07:35.311  INFO 3420 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-26 16:07:35.312  INFO 3420 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'default_databaseSource' has been autodetected for JMX exposure
+2019-02-26 16:07:35.316  INFO 3420 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'default_databaseSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=default_databaseSource,type=DruidDataSource]
+2019-02-26 16:07:35.363  INFO 3420 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-26 16:07:35.370  INFO 3420 --- [main] com.Application                          : Started Application in 7.558 seconds (JVM running for 7.972)
+2019-02-26 16:07:50.650  INFO 3420 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-26 16:07:50.651  INFO 3420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-26 16:07:50.687  INFO 3420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2019-02-26 16:07:50.734  INFO 3420 --- [http-nio-8080-exec-1] c.x.s.admin.controller.LoginController   : ==========hlhdidi123false
+2019-02-26 16:08:06.890  INFO 3420 --- [http-nio-8080-exec-2] c.x.s.admin.controller.LoginController   : ==========hlhdidi1234false
+2019-02-26 16:08:09.362  INFO 3420 --- [http-nio-8080-exec-3] c.x.s.admin.controller.LoginController   : ==========hlhdidi1234false
+2019-02-26 16:08:42.293  INFO 16116 --- [main] com.Application                          : Starting Application on DESKTOP-94NL1GQ with PID 16116 (C:\Users\pengb\git\springboot-shiro\springboot-shiro\target\classes started by gaoxinda in C:\Users\pengb\git\springboot-shiro\springboot-shiro)
+2019-02-26 16:08:42.295  INFO 16116 --- [main] com.Application                          : The following profiles are active: dev
+2019-02-26 16:08:42.352  INFO 16116 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Tue Feb 26 16:08:42 CST 2019]; root of context hierarchy
+2019-02-26 16:08:44.816  INFO 16116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-26 16:08:46.308  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class com.xm.shiro.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$c09d241e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:46.847  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:46.858  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$ff2b1141] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:46.863  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfig' of type [class com.xm.shiro.config.DruidConfig$$EnhancerBySpringCGLIB$$a42791b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.294 ERROR 16116 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2019-02-26 16:08:47.352  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'default_databaseSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.659  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.673  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.674  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.677  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class com.sun.proxy.$Proxy54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.681  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.684  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.686  INFO 16116 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2019-02-26 16:08:47.686  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [class com.xm.shiro.config.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.707  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.721  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.734  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.751  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.xm.shiro.config.RedisConfig$$EnhancerBySpringCGLIB$$9a4fb590] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.756  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc56c011] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.777  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:47.814  INFO 16116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$1568f62f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:08:48.215  INFO 16116 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-26 16:08:48.226  INFO 16116 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-02-26 16:08:48.227  INFO 16116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-02-26 16:08:48.299  INFO 16116 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-26 16:08:48.300  INFO 16116 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5951 ms
+2019-02-26 16:08:48.306  INFO 16116 --- [localhost-startStop-1] com.xm.shiro.config.DruidConfig          : init Druid Servlet Configuration 
+2019-02-26 16:08:48.483  INFO 16116 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-02-26 16:08:48.484  INFO 16116 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-26 16:08:48.487  INFO 16116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-26 16:08:48.487  INFO 16116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-26 16:08:48.487  INFO 16116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-26 16:08:48.488  INFO 16116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-26 16:08:48.488  INFO 16116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-26 16:08:48.488  INFO 16116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2019-02-26 16:08:48.892  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@dd8ba08: startup date [Tue Feb 26 16:08:42 CST 2019]; root of context hierarchy
+2019-02-26 16:08:48.955  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.index()
+2019-02-26 16:08:48.956  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logOut]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.logOut(javax.servlet.http.HttpSession)
+2019-02-26 16:08:48.957  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public void com.xm.shiro.admin.controller.LoginController.login(java.lang.String,java.lang.String,boolean,javax.servlet.http.HttpServletResponse)
+2019-02-26 16:08:48.959  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.update(com.xm.shiro.admin.entity.User)
+2019-02-26 16:08:48.959  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public int com.xm.shiro.admin.controller.UserController.delete(java.lang.Integer)
+2019-02-26 16:08:48.959  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.create(com.xm.shiro.admin.entity.User)
+2019-02-26 16:08:48.960  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.xm.shiro.admin.entity.User> com.xm.shiro.admin.controller.UserController.list(javax.servlet.http.HttpServletRequest)
+2019-02-26 16:08:48.961  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.detail(java.lang.Integer)
+2019-02-26 16:08:48.963  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-26 16:08:48.963  INFO 16116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-26 16:08:48.999  INFO 16116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:08:48.999  INFO 16116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:08:49.043  INFO 16116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:08:49.373  INFO 16116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-26 16:08:49.373  INFO 16116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'default_databaseSource' has been autodetected for JMX exposure
+2019-02-26 16:08:49.377  INFO 16116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'default_databaseSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=default_databaseSource,type=DruidDataSource]
+2019-02-26 16:08:49.421  INFO 16116 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-26 16:08:49.427  INFO 16116 --- [main] com.Application                          : Started Application in 7.497 seconds (JVM running for 7.857)
+2019-02-26 16:08:52.416  INFO 16116 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-26 16:08:52.416  INFO 16116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-26 16:08:52.443  INFO 16116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2019-02-26 16:08:52.485  INFO 16116 --- [http-nio-8080-exec-1] c.x.s.admin.controller.LoginController   : ==========hlhdidi1234false
+2019-02-26 16:08:52.622  INFO 16116 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : doGetAuthenticationInfo +org.apache.shiro.authc.UsernamePasswordToken - hlhdidi, rememberMe=false
+2019-02-26 16:08:52.622  INFO 16116 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : hlhdidi[C@3fa82397
+2019-02-26 16:08:52.969  INFO 16116 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-02-26 16:09:01.090  INFO 16116 --- [http-nio-8080-exec-2] c.x.s.admin.controller.LoginController   : ==========hlhdidi123false
+2019-02-26 16:09:01.092  INFO 16116 --- [http-nio-8080-exec-2] com.xm.shiro.config.ShiroRealm           : doGetAuthenticationInfo +org.apache.shiro.authc.UsernamePasswordToken - hlhdidi, rememberMe=false
+2019-02-26 16:09:01.092  INFO 16116 --- [http-nio-8080-exec-2] com.xm.shiro.config.ShiroRealm           : hlhdidi[C@2142c6b5
+2019-02-26 16:34:52.150  INFO 9512 --- [main] com.Application                          : Starting Application on DESKTOP-94NL1GQ with PID 9512 (C:\Users\pengb\git\springboot-shiro\springboot-shiro\target\classes started by gaoxinda in C:\Users\pengb\git\springboot-shiro\springboot-shiro)
+2019-02-26 16:34:52.152  INFO 9512 --- [main] com.Application                          : The following profiles are active: dev
+2019-02-26 16:34:52.193  INFO 9512 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbd1f6: startup date [Tue Feb 26 16:34:52 CST 2019]; root of context hierarchy
+2019-02-26 16:34:56.028  INFO 9512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-26 16:34:58.047  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class com.xm.shiro.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$c709f074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:58.575  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:58.589  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$597dd97] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:58.595  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfig' of type [class com.xm.shiro.config.DruidConfig$$EnhancerBySpringCGLIB$$aa945e0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.028 ERROR 9512 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2019-02-26 16:34:59.058  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'default_databaseSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.252  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.261  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.262  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.264  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.268  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.269  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.269  INFO 9512 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2019-02-26 16:34:59.269  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [class com.xm.shiro.config.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.286  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.298  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.312  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.331  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.xm.shiro.config.RedisConfig$$EnhancerBySpringCGLIB$$a0bc81e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.338  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d2c38c67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.350  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.380  INFO 9512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$1bd5c285] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:34:59.816  INFO 9512 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-26 16:34:59.830  INFO 9512 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-02-26 16:34:59.831  INFO 9512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-02-26 16:34:59.957  INFO 9512 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-26 16:34:59.957  INFO 9512 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7766 ms
+2019-02-26 16:34:59.964  INFO 9512 --- [localhost-startStop-1] com.xm.shiro.config.DruidConfig          : init Druid Servlet Configuration 
+2019-02-26 16:35:00.168  INFO 9512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-02-26 16:35:00.170  INFO 9512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-26 16:35:00.172  INFO 9512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-26 16:35:00.173  INFO 9512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-26 16:35:00.173  INFO 9512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-26 16:35:00.173  INFO 9512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-26 16:35:00.174  INFO 9512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-26 16:35:00.174  INFO 9512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2019-02-26 16:35:00.971  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.index()
+2019-02-26 16:35:00.972  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public void com.xm.shiro.admin.controller.LoginController.login(java.lang.String,java.lang.String,boolean,javax.servlet.http.HttpServletResponse)
+2019-02-26 16:35:00.972  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logOut]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.logOut(javax.servlet.http.HttpSession)
+2019-02-26 16:35:00.974  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.update(com.xm.shiro.admin.entity.User)
+2019-02-26 16:35:00.975  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public int com.xm.shiro.admin.controller.UserController.delete(java.lang.Integer)
+2019-02-26 16:35:00.975  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.create(com.xm.shiro.admin.entity.User)
+2019-02-26 16:35:00.976  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.xm.shiro.admin.entity.User> com.xm.shiro.admin.controller.UserController.list(javax.servlet.http.HttpServletRequest)
+2019-02-26 16:35:00.976  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.detail(java.lang.Integer)
+2019-02-26 16:35:00.980  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-02-26 16:35:00.980  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-02-26 16:35:00.981  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-02-26 16:35:00.983  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-26 16:35:00.983  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-26 16:35:01.163  INFO 9512 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-26 16:35:01.265  INFO 9512 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbd1f6: startup date [Tue Feb 26 16:34:52 CST 2019]; root of context hierarchy
+2019-02-26 16:35:01.339  INFO 9512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:35:01.340  INFO 9512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:35:01.388  INFO 9512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:35:01.748  INFO 9512 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-26 16:35:01.749  INFO 9512 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'default_databaseSource' has been autodetected for JMX exposure
+2019-02-26 16:35:01.755  INFO 9512 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'default_databaseSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=default_databaseSource,type=DruidDataSource]
+2019-02-26 16:35:01.759  INFO 9512 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-02-26 16:35:01.759  INFO 9512 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-26 16:35:01.783  INFO 9512 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-26 16:35:01.812  INFO 9512 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-26 16:35:02.028  INFO 9512 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-26 16:35:02.034  INFO 9512 --- [main] com.Application                          : Started Application in 10.253 seconds (JVM running for 10.635)
+2019-02-26 16:35:26.532  INFO 9512 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-26 16:35:26.533  INFO 9512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-26 16:35:26.566  INFO 9512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2019-02-26 16:35:48.430  INFO 9512 --- [http-nio-8080-exec-8] c.x.s.admin.controller.LoginController   : ==========hlhdidi123false
+2019-02-26 16:35:48.512 ERROR 9512 --- [http-nio-8080-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool] with root cause
+
+redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.process(Protocol.java:161) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Protocol.read(Protocol.java:215) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.BinaryJedis.auth(BinaryJedis.java:2139) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:108) ~[jedis-2.9.0.jar:na]
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:868) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363) ~[commons-pool2-2.4.2.jar:2.4.2]
+	at redis.clients.util.Pool.getResource(Pool.java:49) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:226) ~[jedis-2.9.0.jar:na]
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:16) ~[jedis-2.9.0.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:194) ~[spring-data-redis-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:348) ~[spring-data-redis-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:129) ~[spring-data-redis-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:92) ~[spring-data-redis-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:79) ~[spring-data-redis-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:194) ~[spring-data-redis-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:169) ~[spring-data-redis-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:91) ~[spring-data-redis-1.8.0.RELEASE.jar:na]
+	at org.springframework.data.redis.core.DefaultValueOperations.get(DefaultValueOperations.java:43) ~[spring-data-redis-1.8.0.RELEASE.jar:na]
+	at com.xm.shiro.utils.RedisUtil.get(RedisUtil.java:54) ~[classes/:na]
+	at com.xm.shiro.admin.controller.LoginController.login(LoginController.java:48) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:116) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.5.jar:1.2.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.5.jar:1.1.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.6.RELEASE.jar:4.3.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:474) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:798) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1434) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_171]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_171]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.11.jar:8.5.11]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+
+2019-02-26 16:37:10.158  INFO 14508 --- [main] com.Application                          : Starting Application on DESKTOP-94NL1GQ with PID 14508 (C:\Users\pengb\git\springboot-shiro\springboot-shiro\target\classes started by gaoxinda in C:\Users\pengb\git\springboot-shiro\springboot-shiro)
+2019-02-26 16:37:10.161  INFO 14508 --- [main] com.Application                          : The following profiles are active: dev
+2019-02-26 16:37:10.208  INFO 14508 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbd1f6: startup date [Tue Feb 26 16:37:10 CST 2019]; root of context hierarchy
+2019-02-26 16:37:13.843  INFO 14508 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-02-26 16:37:15.861  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [class com.xm.shiro.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$c709f074] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.362  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties' of type [class org.mybatis.spring.boot.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.374  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration' of type [class org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$597dd97] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.378  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'druidConfig' of type [class com.xm.shiro.config.DruidConfig$$EnhancerBySpringCGLIB$$aa945e0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.596 ERROR 14508 --- [main] c.a.druid.pool.DruidAbstractDataSource   : maxIdle is deprecated
+2019-02-26 16:37:16.626  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'default_databaseSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.836  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.844  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [class org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.845  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.846  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userDao' of type [class com.sun.proxy.$Proxy55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.849  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.850  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'permissionDao' of type [class com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.852  INFO 14508 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2019-02-26 16:37:16.852  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroRealm' of type [class com.xm.shiro.config.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.860  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.874  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.884  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.907  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.xm.shiro.config.RedisConfig$$EnhancerBySpringCGLIB$$a0bc81e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.914  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d2c38c67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.931  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [class org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:16.966  INFO 14508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$1bd5c285] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-26 16:37:17.266  INFO 14508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2019-02-26 16:37:17.277  INFO 14508 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2019-02-26 16:37:17.278  INFO 14508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-02-26 16:37:17.363  INFO 14508 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-02-26 16:37:17.364  INFO 14508 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7159 ms
+2019-02-26 16:37:17.371  INFO 14508 --- [localhost-startStop-1] com.xm.shiro.config.DruidConfig          : init Druid Servlet Configuration 
+2019-02-26 16:37:17.567  INFO 14508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-02-26 16:37:17.569  INFO 14508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-02-26 16:37:17.572  INFO 14508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-26 16:37:17.572  INFO 14508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-26 16:37:17.572  INFO 14508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-26 16:37:17.573  INFO 14508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-26 16:37:17.573  INFO 14508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2019-02-26 16:37:17.573  INFO 14508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2019-02-26 16:37:18.284  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.index()
+2019-02-26 16:37:18.285  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[POST]}" onto public void com.xm.shiro.admin.controller.LoginController.login(java.lang.String,java.lang.String,boolean,javax.servlet.http.HttpServletResponse)
+2019-02-26 16:37:18.285  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/logOut]}" onto public java.lang.String com.xm.shiro.admin.controller.LoginController.logOut(javax.servlet.http.HttpSession)
+2019-02-26 16:37:18.287  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[PUT]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.update(com.xm.shiro.admin.entity.User)
+2019-02-26 16:37:18.288  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public int com.xm.shiro.admin.controller.UserController.delete(java.lang.Integer)
+2019-02-26 16:37:18.288  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.create(com.xm.shiro.admin.entity.User)
+2019-02-26 16:37:18.288  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.xm.shiro.admin.entity.User> com.xm.shiro.admin.controller.UserController.list(javax.servlet.http.HttpServletRequest)
+2019-02-26 16:37:18.290  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.xm.shiro.admin.entity.User com.xm.shiro.admin.controller.UserController.detail(java.lang.Integer)
+2019-02-26 16:37:18.293  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-02-26 16:37:18.294  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-02-26 16:37:18.295  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-02-26 16:37:18.298  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-26 16:37:18.299  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-26 16:37:18.467  INFO 14508 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-26 16:37:18.566  INFO 14508 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@fbd1f6: startup date [Tue Feb 26 16:37:10 CST 2019]; root of context hierarchy
+2019-02-26 16:37:18.634  INFO 14508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:37:18.634  INFO 14508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:37:18.688  INFO 14508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-26 16:37:19.037  INFO 14508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-02-26 16:37:19.038  INFO 14508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'default_databaseSource' has been autodetected for JMX exposure
+2019-02-26 16:37:19.045  INFO 14508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'default_databaseSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=default_databaseSource,type=DruidDataSource]
+2019-02-26 16:37:19.050  INFO 14508 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-02-26 16:37:19.051  INFO 14508 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-02-26 16:37:19.078  INFO 14508 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-02-26 16:37:19.108  INFO 14508 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-02-26 16:37:19.326  INFO 14508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2019-02-26 16:37:19.331  INFO 14508 --- [main] com.Application                          : Started Application in 9.547 seconds (JVM running for 9.933)
+2019-02-26 16:37:30.681  INFO 14508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-26 16:37:30.682  INFO 14508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-26 16:37:30.721  INFO 14508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2019-02-26 16:37:30.786  INFO 14508 --- [http-nio-8080-exec-1] c.x.s.admin.controller.LoginController   : ==========hlhdidi123false
+2019-02-26 16:37:30.787  INFO 14508 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : doGetAuthenticationInfo +org.apache.shiro.authc.UsernamePasswordToken - hlhdidi, rememberMe=false
+2019-02-26 16:37:30.787  INFO 14508 --- [http-nio-8080-exec-1] com.xm.shiro.config.ShiroRealm           : hlhdidi[C@3fb849e7
+2019-02-26 16:37:31.094  INFO 14508 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited

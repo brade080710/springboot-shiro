@@ -2,7 +2,7 @@ package com.xm.shiro.admin.controller;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
-
+import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
@@ -11,6 +11,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.*;
 
+import com.xm.shiro.admin.entity.User;
+import com.xm.shiro.utils.BaseError;
+import com.xm.shiro.utils.RedisUtil;
+import com.xm.shiro.utils.WebUtil;
+
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
@@ -24,29 +30,58 @@ public class LoginController {
 	
 	@Autowired
     Environment env;
+	
+	@Autowired
+	RedisUtil redisUtil;
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public String login(
+    public void login(
             @RequestParam(value = "username", required = true) String userName,
             @RequestParam(value = "password", required = true) String password,
-            @RequestParam(value = "rememberMe", required = true, defaultValue = "false") boolean rememberMe
+            @RequestParam(value = "rememberMe", required = true, defaultValue = "false") boolean rememberMe, HttpServletResponse response
     ) {
         logger.info("==========" + userName + password + rememberMe);
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(userName, password);
         token.setRememberMe(rememberMe);
-        String test = env.getProperty("spring.datasource.username");
-        String test1 = env.getProperty("druid.login.user_name");
-        System.out.println(test);
-        try {
-            subject.login(token);
-        } catch (AuthenticationException e) {
-            e.printStackTrace();
+//        User user = (User)redisUtil.get("user");
+//        if (redisUtil.get("user") == null) {
+        	
+        	try {
+        		subject.login(token);
+        		
+        		 //获得用户对象
+                User u=(User)subject.getPrincipal();
+        		System.out.println(u.getUsername());
+//        		redisUtil.set("user", (User)subject.getPrincipal());
+        	} catch(IncorrectCredentialsException e) {
+        		try {
+					WebUtil.writeError(response, new BaseError("密码输入错误"));
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+        		return ;
+        		
+        	} catch (AuthenticationException e) {
+        		e.printStackTrace();
 //            rediect.addFlashAttribute("errorText", "您的账号或密码输入错误!");
-            return "{\"Msg\":\"您的账号或密码输入错误\",\"state\":\"failed\"}";
-        }
-        return "{\"Msg\":\"登陆成功\",\"state\":\"success\"}";
+        		try {
+					WebUtil.writeError(response, new BaseError("您的账号或密码输入错误"));
+				} catch (Exception e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+        		return ;
+        	}
+//        }
+         try {
+			WebUtil.writeOK(response,"Msg","登录成功");
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
     }
 
     @RequestMapping("/logOut")

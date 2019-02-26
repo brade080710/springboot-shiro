@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry location="D:\mysql-connector-java-5.1.28-bin.jar" />
+	<context id="context1">
+		<!-- 查询单条数据插件 -->
+		<plugin type="com.itfsw.mybatis.generator.plugins.SelectOneByExamplePlugin" />
+		<!-- 数据Model链式构建插件 -->
+		<plugin type="com.itfsw.mybatis.generator.plugins.ModelBuilderPlugin" />
+		<!-- Example Criteria 增强插件 -->
+		<plugin type="com.itfsw.mybatis.generator.plugins.ExampleEnhancedPlugin" />
+		<!-- MySQL分页插件 -->
+		<plugin type="com.itfsw.mybatis.generator.plugins.LimitPlugin" />
+		<!-- 批量插入插件 -->
+		<plugin type="com.itfsw.mybatis.generator.plugins.BatchInsertPlugin" />
+		<!-- 数据Model属性对应Column获取插件 -->
+		<plugin type="com.itfsw.mybatis.generator.plugins.ModelColumnPlugin" />
+		<!-- 增量插件 -->
+		<plugin type="com.itfsw.mybatis.generator.plugins.IncrementsPlugin" />
+		<!-- 查询结果选择性返回插件 -->
+		<plugin type="com.itfsw.mybatis.generator.plugins.SelectSelectivePlugin" />
+		<!-- Selective选择插入更新增强插件 -->
+		<plugin type="com.itfsw.mybatis.generator.plugins.SelectiveEnhancedPlugin" />
+
+		<commentGenerator> <property name="suppressAllComments" value="true" /> </commentGenerator>
+		<jdbcConnection
+			connectionURL="jdbc:mysql://192.168.1.209:3306/qianhu?characterEncoding=UTF8"
+			driverClass="com.mysql.jdbc.Driver" password="123456" userId="root" />
+<!-- 		<javaModelGenerator targetPackage="travel.z.account.company.model" -->
+<!-- 			targetProject="src/main/java" /> -->
+<!-- 		<sqlMapGenerator -->
+<!-- 				targetPackage="travel.z.account.company.dao" targetProject="src/main/java" /> -->
+<!-- 		<javaClientGenerator -->
+<!-- 				targetPackage="travel.z.account.company.dao" targetProject="src/main/java" -->
+<!-- 				type="XMLMAPPER" /> -->
+				
+		<javaModelGenerator targetPackage="com.xm.shiro.admin.entity"
+			targetProject="src/main/java" />
+		<sqlMapGenerator
+				targetPackage="mapper" targetProject="src/main/resources" />
+		<javaClientGenerator
+				targetPackage="com.xm.shiro.admin.dao" targetProject="src/main/java"
+				type="XMLMAPPER" />
+		
+
+<!-- 		<table schema="zres" tableName="customer" enableDeleteByExample="false"> -->
+<!-- 			<generatedKey column="id" sqlStatement="mysql" identity="true" /> -->
+<!-- 			<columnOverride column="status" javaType="java.lang.Integer" /> -->
+<!-- 			<columnOverride column="type" javaType="java.lang.Integer" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="qianhu"  delimitIdentifiers = "true" tableName="jdnotify" enableDeleteByExample="false"> -->
+<!-- 			<property name="useActualColumnNames" value="true"/> -->
+<!-- 			<generatedKey column="id" sqlStatement="mysql" identity="true" /> -->
+<!-- 		</table> -->
+		<!--<table schema="qianhu"  delimitIdentifiers = "true" tableName="mertransfer" enableDeleteByExample="false">
+			<property name="useActualColumnNames" value="true"/>
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+		</table>-->
+		<!--<table schema="qianhu"  delimitIdentifiers = "true" tableName="merextract" enableDeleteByExample="false">
+			<property name="useActualColumnNames" value="true"/>
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+		</table>-->
+		<!--<table schema="qianhu"  delimitIdentifiers = "true" tableName="realnameapply" enableDeleteByExample="false">-->
+			<!--<property name="useActualColumnNames" value="true"/>-->
+			<!--<generatedKey column="id" sqlStatement="mysql" identity="true" />-->
+		<!--</table>-->
+		<!--<table schema="qianhu"  delimitIdentifiers = "true" tableName="merrecharge" enableDeleteByExample="false">-->
+			<!--<property name="useActualColumnNames" value="true"/>-->
+			<!--<generatedKey column="id" sqlStatement="mysql" identity="true" />-->
+		<!--</table>-->
+		<!-- 
+		<table schema="qianhu"  delimitIdentifiers = "true" tableName="goods" enableDeleteByExample="false">
+			<property name="useActualColumnNames" value="true"/>
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+		</table>
+				<table schema="qianhu"  delimitIdentifiers = "true" tableName="order" enableDeleteByExample="false">
+			<property name="useActualColumnNames" value="true"/>
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+		</table>
+				<table schema="qianhu"  delimitIdentifiers = "true" tableName="orderdetail" enableDeleteByExample="false">
+			<property name="useActualColumnNames" value="true"/>
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+		</table>
+		
+		<table schema="qianhu"  delimitIdentifiers = "true" tableName="meracquirer" enableDeleteByExample="false">
+			<property name="useActualColumnNames" value="true"/>
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+		</table>	 -->	 
+		<table schema="qianhu"  delimitIdentifiers = "true" tableName="spliteorder" enableDeleteByExample="false">
+			<property name="useActualColumnNames" value="true"/>
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+		</table>	
+	</context>
+</generatorConfiguration>

@@ -66,7 +66,7 @@ public class ShiroRealm extends AuthorizingRealm {
             //设置用户session
             Session session = SecurityUtils.getSubject().getSession();
             session.setAttribute("user", user);
-            return new SimpleAuthenticationInfo(userName,user.getPassword(),getName());
+            return new SimpleAuthenticationInfo(user, user.getPassword(),getName());
         } else {
             return null;
         }

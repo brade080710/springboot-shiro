@@ -1,0 +1,68 @@
+server:
+    port: 8082
+    host: "http://192.168.1.209"
+
+spring:
+    redis:
+        host: "127.0.0.1"
+        port: "6379"
+        password: "14392a51-76d3-4644-9b6e-4695abc77053"
+        timeout: 30000
+        database: 1
+        pool:
+         # 连接池最大连接数（使用负值表示没有限制）
+         max-active: 8
+         # 连接池最大阻塞等待时间（使用负值表示没有限制）
+         max-wait: -1
+         # 连接池中的最大空闲连接
+         max-idle: 8
+         # 连接池中的最小空闲连接
+         min-idle: 0
+    freemarker:
+        suffix: ".html"
+        checkTemplateLocation: false
+    jackson:
+        date-format: "yyyy-MM-dd HH:mm:ss"
+        time-zone: GMT+8
+    mvc:
+      view:
+          # 页面默认前缀目录
+          prefix: /WEB-INF/jsp/
+          # 响应页面默认后缀
+          suffix: .jsp
+
+shiro:
+    redis:
+        host: "127.0.0.1"
+        port: "6379"
+        password: "14392a51-76d3-4644-9b6e-4695abc77053"
+        timeout: 30000
+        database: 2
+    session:
+        cookieName: qaccoun_session_id
+        cookieDomain: ""
+        cookiePath: "/"
+        cookieMaxAge: -1
+        globalTimeout: 432000000
+    cache:
+        globalTimeout: 432000000
+
+webutil:
+    media:
+        useoss: true
+        uploadedFiles: /opt/media/uploads
+        fileExtensions: jpeg,jpg,png,pdf,xls,xlsx
+        uploadedDirDepth: "2*32"
+        uploadedFileMaxSize: 5
+        host: /uploads/
+
+oss:
+    bucketName: timoral-res-images
+    imageHost: img.qianw.com
+    endpoint: http://oss-cn-hangzhou-internal.aliyuncs.com
+    accessKey: LTAIHGB1wdVblh31
+    accessSecret: D70Nh48OZZMpLLupRJBQHcRQA6R9ke
+
+
+
+
