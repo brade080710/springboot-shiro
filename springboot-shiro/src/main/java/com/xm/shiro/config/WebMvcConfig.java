@@ -9,6 +9,7 @@ import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import com.xm.shiro.interceptor.LogInterceptor;
@@ -39,4 +40,10 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
             ContentNegotiationConfigurer configurer) {
         configurer.favorPathExtension(false);
     }
+    // for upload file
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/uploads/**").addResourceLocations("file:D://uploads/");
+    }
+
 }

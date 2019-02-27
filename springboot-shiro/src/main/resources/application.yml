@@ -47,14 +47,15 @@ shiro:
     cache:
         globalTimeout: 432000000
 
-webutil:
-    media:
-        useoss: true
-        uploadedFiles: /opt/media/uploads
-        fileExtensions: jpeg,jpg,png,pdf,xls,xlsx
-        uploadedDirDepth: "2*32"
-        uploadedFileMaxSize: 5
-        host: /uploads/
+
+qmedia:
+     useoss: false
+     uploadedFiles: D://uploads/
+     fileExtensions: jpeg,jpg,png,pdf,xls,xlsx
+     uploadedDirDepth: "2*32"
+     uploadedFileMaxSize: 5
+     host: "sameWithUpload"
+    #host: "http://media.timoral.com/"
 
 oss:
     bucketName: timoral-res-images
@@ -63,6 +64,9 @@ oss:
     accessKey: LTAIHGB1wdVblh31
     accessSecret: D70Nh48OZZMpLLupRJBQHcRQA6R9ke
 
+
+
+ 
 
 
 
