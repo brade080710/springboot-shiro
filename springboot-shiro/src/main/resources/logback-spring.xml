@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+	<!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 -->
+	<property name="LOG_HOME" value="./logs" />
+	<property name="AppName" value="Shiroapplication" />
+	<!-- 控制台输出 -->
+	<appender name="STDOUT"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+				%logger{50}-%msg %n</pattern>
+		</encoder>
+	</appender>
+	<!-- 设置分割 -->
+	<appender name="FILE"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- 设置按尺寸和时间（同时满足）分割 -->
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>${LOG_HOME}/${AppName}.%d{yyyy-MM-dd}.%i.log
+			</fileNamePattern>
+			<!-- each file should be at most 10MB, keep 30 days worth of history, 
+				but at most 3GB -->
+			<maxFileSize>10MB</maxFileSize>
+			<maxHistory>30</maxHistory>
+			<totalSizeCap>3GB</totalSizeCap>
+		</rollingPolicy>
+		<encoder
+			class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+				%logger{50}-%msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<appender name="fileInfoLog"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!--如果只是想要 Info 级别的日志，只是过滤 info 还是会输出 Error 日志，因为 Error 的级别高， 所以我们使用下面的策略，可以避免输出 
+			Error 的日志 -->
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<!--过滤 Error -->
+			<level>ERROR</level>
+			<!--匹配到就禁止 -->
+			<onMatch>DENY</onMatch>
+			<!--没有匹配到就允许 -->
+			<onMismatch>ACCEPT</onMismatch>
+		</filter>
+		<!--日志名称，如果没有File 属性，那么只会使用FileNamePattern的文件路径规则 如果同时有<File>和<FileNamePattern>，那么当天日志是<File>，明天会自动把今天 
+			的日志改名为今天的日期。即，<File> 的日志都是当天的。 -->
+		<File>${LOG_HOME}/info.${AppName}.log</File>
+		<!--滚动策略，按照时间滚动 TimeBasedRollingPolicy -->
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!--文件路径,定义了日志的切分方式——把每一天的日志归档到一个文件中,以防止日志填满整个磁盘空间 -->
+			<FileNamePattern>${LOG_HOME}/info.${AppName}.%d{yyyy-MM-dd}.log
+			</FileNamePattern>
+			<!--只保留最近90天的日志 -->
+			<maxHistory>90</maxHistory>
+			<!--用来指定日志文件的上限大小，那么到了这个值，就会删除旧的日志 -->
+			<!--<totalSizeCap>1GB</totalSizeCap> -->
+		</rollingPolicy>
+		<!--日志输出编码格式化 -->
+		<encoder>
+			<charset>UTF-8</charset>
+			<pattern>%d [%thread] %-5level %logger{36} %line - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<appender name="fileErrorLog"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!--如果只是想要 Error 级别的日志，那么需要过滤一下，默认是 info 级别的，ThresholdFilter -->
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>Error</level>
+		</filter>
+		<!--日志名称，如果没有File 属性，那么只会使用FileNamePattern的文件路径规则 如果同时有<File>和<FileNamePattern>，那么当天日志是<File>，明天会自动把今天 
+			的日志改名为今天的日期。即，<File> 的日志都是当天的。 -->
+		<File>${LOG_HOME}/error.${AppName}.log</File>
+		<!--滚动策略，按照时间滚动 TimeBasedRollingPolicy -->
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!--文件路径,定义了日志的切分方式——把每一天的日志归档到一个文件中,以防止日志填满整个磁盘空间 -->
+			<FileNamePattern>${LOG_HOME}/error.${AppName}.%d{yyyy-MM-dd}.log
+			</FileNamePattern>
+			<!--只保留最近90天的日志 -->
+			<maxHistory>90</maxHistory>
+			<!--用来指定日志文件的上限大小，那么到了这个值，就会删除旧的日志 -->
+			<!--<totalSizeCap>1GB</totalSizeCap> -->
+		</rollingPolicy>
+		<!--日志输出编码格式化 -->
+		<encoder>
+			<charset>UTF-8</charset>
+			<pattern>%d [%thread] %-5level %logger{36} %line - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+
+	<!-- 日志输出级别 -->
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+
+	<!-- 测试环境+开发环境. 多个使用逗号隔开. -->
+	<springProfile name="test,dev">
+		<logger name="com.xm.shiro" level="DEBUG" additivity="false">
+			<appender-ref ref="STDOUT" />
+		</logger>
+	</springProfile>
+
+	<!-- 生产环境. -->
+	<springProfile name="production">
+		<logger name="com.xm.shiro" level="INFO" additivity="false">
+			<appender-ref ref="fileInfoLog" />
+			<appender-ref ref="fileErrorLog" />
+		</logger>
+	</springProfile>
+</configuration> 

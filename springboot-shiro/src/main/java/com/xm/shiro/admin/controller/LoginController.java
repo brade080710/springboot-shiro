@@ -42,6 +42,11 @@ public class LoginController {
             @RequestParam(value = "rememberMe", required = true, defaultValue = "false") boolean rememberMe, HttpServletResponse response
     ) {
         logger.info("==========" + userName + password + rememberMe);
+        logger.trace("日志输出 trace");
+        logger.debug("日志输出 debug");
+        logger.info("日志输出 info");
+        logger.warn("日志输出 warn");
+        logger.error("日志输出 error");
         Subject subject = SecurityUtils.getSubject();
         UsernamePasswordToken token = new UsernamePasswordToken(userName, password);
         token.setRememberMe(rememberMe);

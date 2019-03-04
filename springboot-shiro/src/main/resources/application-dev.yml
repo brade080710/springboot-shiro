@@ -1,15 +1,18 @@
 server:
   port: 8080
   
-  logging:
+logging:
+    config: classpath:logback-spring.xml
+  
+  #logging:
     #file: my.log
-    level:
-      root: WARN
-      com.winter.mapper: INFO
-      org.springframework.web: INFO
-    pattern:
-       file: '%d{yyyy-MM-dd HH:mm:ss.SSS} %5p -- [%t] %-40.40logger{39} : %m%n%xEx{10}'
-       console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %5p -- [%t] %-40.40logger{39} : %m%n%xEx{10}'
+   # level:
+      #root: WARN
+    #  com.xm.shiro: DEBUG
+     # org.springframework.web: DEBUG
+    #pattern:
+     #  file: '%d{yyyy-MM-dd HH:mm:ss.SSS} %5p -- [%t] %-40.40logger{39} : %m%n%xEx{10}'
+      # console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %5p -- [%t] %-40.40logger{39} : %m%n%xEx{10}'
   
 
 druid:

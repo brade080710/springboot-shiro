@@ -28,7 +28,7 @@ public class ShiroRealm extends AuthorizingRealm {
     //授权
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-        logger.info("doGetAuthorizationInfo+"+principalCollection.toString());
+        logger.info("doGetAuthorizationInfo+ "+principalCollection.toString());
         User user = userService.getByUserName((String) principalCollection.getPrimaryPrincipal());
 
 
