@@ -23,9 +23,15 @@ import com.xm.shiro.utils.StringUtils;
 import com.xm.shiro.utils.Validator;
 import com.xm.shiro.utils.WebUtil;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
+
 
 @Controller
 @CrossOrigin
+@Api(tags = "上传附件API")
 public class UploadController {
     // private static Log log = LogFactory.getLog(UploadController.class);
 
@@ -42,6 +48,10 @@ public class UploadController {
      * @param response
      * @throws Exception
      */
+    @ApiOperation("上传")
+	@ApiImplicitParams({ @ApiImplicitParam(name = "uploadfile", dataType = "MultipartFile", required = true, value = "附件"),
+			@ApiImplicitParam(name = "prefix", dataType = "String", required = true, value = "上传文件夹名，后续会创建"),
+			 })
     @RequestMapping(value = "/media/upload", method = RequestMethod.POST)
     public void uploadFile(@RequestParam("file") MultipartFile uploadfile, String prefix,
             HttpServletRequest request, HttpServletResponse response) throws Exception {
