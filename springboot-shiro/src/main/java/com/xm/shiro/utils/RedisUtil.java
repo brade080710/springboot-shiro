@@ -53,6 +53,21 @@ public class RedisUtil {
 	public Object get(final String key) {
 		return redisTemplate.opsForValue().get(key);
 	}
+	
+	/**
+	 * @Description: 读取缓存时间
+	 */
+	public Long getExpire(final String key) {
+		return redisTemplate.getExpire(key, TimeUnit.SECONDS);
+	}
+	
+	/**
+	 * @Description: 自增
+	 */
+	public void increValue(final String key) {
+		
+		redisTemplate.opsForValue().increment(key, 1);
+	}
 
 	/**
 	 * @Description: 写入缓存
